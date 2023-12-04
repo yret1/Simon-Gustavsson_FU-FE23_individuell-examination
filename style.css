@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #EEE;
+}
+
+.hero{
+    background: #EEE;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero__about{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hero__title{
+    font-size: 36px;
+    font-weight: 700;
+    padding: 10px;
+}
+.hero__description{
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(34, 34, 34, 0.80);
+    font-weight: 400;
+}
+.hero__buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+.hero__button{
+    width: 130px;
+    height: 40px;
+    flex-shrink: 0;
+    font-size: 16px;
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #FFF;
+    border: none;
+    border-radius: 6px;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: Fira Sans, sans-serif;
+    cursor: pointer;
+}
+.hero__button--appstore, .hero__button--playstore{
+    color: #000;
+    width: 20px;
+
+}
+.hero__picture{
+    padding-top: 30px;
+    display: flex;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.products__title{
+    font-size: 36px;
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+
+.products__grid{
+    display: grid;
+    grid-template-areas: 
+    "small small"
+    "small small"
+    "bigone bigone"
+    "bigbot bigbot";
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.grid__item--small{
+    width: 165px;
+    height: 240px;
+    background: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.grid__item--big{
+    width: 100%;
+    grid-row: span 2;
+    background: #343332;
+    height: 212px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gridtop{
+    grid-area: bigone;
+}
+#gridbottom{
+    grid-area: bigbot;
+}
+
+.item__title--big{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+.item__description--big{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.item__button{
+    width: 145px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #343332;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 12px;
+    font-weight: 500;
+
+    border: 1px solid rgba(255, 255, 255, 0.60);
+}
