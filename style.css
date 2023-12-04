@@ -258,19 +258,25 @@ body {
 
 
 @media (min-width: 700px){
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+        
+    }
     .header__nav{
-        display: none;
+        display: flex;
     }
     .header__nav--desktop{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
     .header__nav--desktop--list{
-        display: flex;
-        width: 45vw;
-        list-style: none;
-        justify-content: space-evenly;
+        display: none
     }
     .desktop__item{
         text-decoration: none;
@@ -286,12 +292,7 @@ body {
     }
     }
     .header__button{
-        display: block;
-        height: 40px;
-        width: 145px;
-        border-radius: 3px;
-        border: 1px solid #000;
-        background: none;
+        display: none;
 
         
 }
@@ -383,6 +384,8 @@ body {
     .item__picture svg{
         width: 150px;
         height: 150px;
+
+        animation: spin 2s linear infinite;
     
     }
 
@@ -397,4 +400,4 @@ body {
         height: 400px;
         margin-right: 200px;
     }
-}}
+}
