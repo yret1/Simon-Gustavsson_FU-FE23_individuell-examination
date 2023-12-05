@@ -176,22 +176,25 @@
         </section>
     </main>
     <footer class="footer">
-        <section class="footer__contact">
+        <form class="footer__contact">
             <h2 class="contact__header">Contact us</h2>
-            <p class="contact__message"><span class="contact__message--span">We´d love to hear from you</span><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel eleifend diam, tempus accumsan neque.</p>
+            <p class="contact__message"><span class="contact__message--span">We´d love to hear from you</span><br> Please enter your information down below or head over to our office and meet us. We typically get back to any requests within 48 hours.</p>
             <section class="contact__option">
                 <img src="/assets/images/navigate-outline 1.svg" alt="logo">
                 <p class="option--text">Vallgatan 25, Göteborg</p>
             </section>
             <section class="contact__option">
                 <img src="assets/images/call-outline 1.svg" alt="logo">
-                <p class="option--text">031 123 456 7</p>
+                <input type="number" class="option--input" placeholder="Your Number ex.0311234567" required></input>
             </section>
             <section class="contact__option">
                 <img src="assets/images/mail-outline 1.svg" alt="logo">
-                <p class="option--text">info@zocom.se</p>
+                <input type="email" class="option--input" placeholder="Your email ex.info@zocom.se"></input>
             </section>
-        </section>
+            <section class="contact__option contact__option--button">
+                <button class="contact__submit" type="submit">Get in touch!</button>
+            </section>
+        </form>
     </footer>
   
 </body>

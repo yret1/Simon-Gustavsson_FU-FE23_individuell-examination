@@ -256,6 +256,49 @@ body {
     line-height: 150%;
 }
 
+.option--input{
+    border: none;
+    border-bottom: 1px solid black;
+
+    width: 60%;
+
+    padding: 5px;
+
+    &:focus{
+        outline: none;
+    
+    }
+}
+
+.contact__submit{
+    width: 145px;
+    height: 40px;
+    font-size: 16px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background:white;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: 500;
+    
+
+    border: 1px solid rgba(0, 0, 0, 0.6);
+
+
+    &:hover{
+        cursor: pointer;
+
+        border: #000 solid 1px;
+        color: white;
+        background-color: #999;
+    }
+}
+
+.contact__option--button{
+    padding-left: 33px;
+}
+
+
 
 @media (min-width: 700px){
 
